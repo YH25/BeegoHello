@@ -6,5 +6,9 @@ import (
 )
 
 func init() {
-    beego.Router("/", &controllers.MainController{})
+	//router:路由
+    beego.Router("/index", &controllers.MainController{})
+    //自己写一个web请求处理
+    //http.HandleFunc("/login",处理函数)
+
 }
