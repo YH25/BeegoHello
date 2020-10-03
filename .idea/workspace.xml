@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="545106b5-1e32-4260-ad12-7385ed3f12da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/person.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/registerController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db_mysql/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hrkUgnrwcEd0J6EvgrF3NCDVTV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +43,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo_variable" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,26 +73,34 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="115" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601001353105">
+    <state x="115" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601222970876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="115" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601001353105" />
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom" timestamp="1601047742578">
+    <state x="115" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601222970876" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1601286832980">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601047742578" />
-    <state width="1493" height="206" key="GridCell.Tab.0.center" timestamp="1601047742578">
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601286832980" />
+    <state x="925" y="156" key="FileChooserDialogImpl" timestamp="1601189861049">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601047742578" />
-    <state width="1493" height="206" key="GridCell.Tab.0.left" timestamp="1601047742577">
+    <state x="925" y="156" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601189861049" />
+    <state width="1493" height="387" key="GridCell.Tab.0.bottom" timestamp="1601735652092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601047742577" />
-    <state width="1493" height="206" key="GridCell.Tab.0.right" timestamp="1601047742578">
+    <state width="1493" height="387" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601735652092" />
+    <state width="1493" height="387" key="GridCell.Tab.0.center" timestamp="1601735652092">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="206" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601047742578" />
+    <state width="1493" height="387" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601735652092" />
+    <state width="1493" height="387" key="GridCell.Tab.0.left" timestamp="1601735652092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="387" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601735652092" />
+    <state width="1493" height="387" key="GridCell.Tab.0.right" timestamp="1601735652092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="387" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601735652092" />
     <state width="1037" height="261" key="GridCell.Tab.1.bottom" timestamp="1600950442970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -104,13 +117,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1037" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600950442970" />
+    <state x="966" y="101" key="RollbackChangesDialog" timestamp="1601204191502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="966" y="101" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601204191502" />
     <state x="270" y="56" key="SettingsEditor" timestamp="1600776640987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600776640987" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600950728305">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601732823916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600950728305" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601732823916" />
   </component>
 </project>
