@@ -32,9 +32,9 @@ func Connect(){
 	//链接数据库
 	connUrl := dbUser +":" + dbPassword + "@tcp("+dbIP+")/"+dbName+"?charset=utf8"
 	db, err := sql.Open(dbDriver,connUrl)
-	if err != nil {//err不为nil,表示连接数据库时出现了错误，程序就在此中断，不用再执行了
+	if err != nil { //err不为nil,表示连接数据库时出现了错误，程序就在此中断，不用再执行了
 		//早发现，早解决
-		panic("数据可链接错误，请检查配置")
+	fmt.Println(err.Error());panic("数据可链接错误，请检查配置")
 	}
 	Db = db
 	fmt.Println(db)
@@ -53,7 +53,7 @@ func AddUser(u models.User)(int64, error)  {
 	if err != nil {
 		return -1, err
 	}
-	row,err :=result.RowsAffected()
+	row,err :=result.RowsAffected()//返回影响数据中几行数据。比如保存了一条数据，则会rowsaffected则返回1
 	if err != nil {
 		return-1, err
 	}
